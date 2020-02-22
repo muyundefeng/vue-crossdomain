@@ -29,7 +29,7 @@ export default {
   },
   mounted () {
     axios
-      .get('/api/getAllUser')
+      .get('/api')
       .then(response => (this.users = response.data))
       .catch(function (error) { // 请求失败处理
         console.log(error)
